@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allgemeinwissen Quiz</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            display: flex;
+            justify-content: center;
+            padding: 40px 10px;
+        }
+
+        main {
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: normal;
+            color: gray;
+            margin-bottom: 30px;
+        }
+
+        section {
+            background-color: #f8f9fc;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 8px 0;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        label:hover {
+            background-color: #e2e6f5;
+        }
+
+        img {
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4e73df;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e59d9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Quiz über Allgemeinwissen</h1>
+        <h2>5 Fragen – von leicht bis schwierig</h2>
+
+        <section>
+            <h3>1. Hauptstadt von Australien?</h3>
+            <label><input type="radio" name="q1" value="Canberra"> Canberra</label>
+            <label><input type="radio" name="q1" value="Krems"> Krems</label>
+            <label><input type="radio" name="q1" value="Sydney"> Sydney</label>
+            <label><input type="radio" name="q1" value="Melbourne"> Melbourne</label>
+        </section>
+
+        <section>
+            <h3>2. Was ist das größte Organ eines Menschen?</h3>
+            <label><input type="radio" name="q2" value="Herz"> Herz</label>
+            <label><input type="radio" name="q2" value="Gehirn"> Gehirn</label>
+            <label><input type="radio" name="q2" value="Haut"> Haut</label>
+            <label><input type="radio" name="q2" value="Lunge"> Lunge</label>
+        </section>
+
+        <section>
+            <h3>3. Wie viele Zähne hat ein erwachsener Mensch?</h3>
+            <label><input type="radio" name="q3" value="28"> 28</label>
+            <label><input type="radio" name="q3" value="32"> 32</label>
+            <label><input type="radio" name="q3" value="34"> 34</label>
+            <label><input type="radio" name="q3" value="67"> 67</label>
+        </section>
+
+        <section>
+            <h3>4. Welche Flagge gehört zu Guyana?</h3>
+            <label><input type="radio" name="q4" value="flagge belize.png"> <img src="flagge belize.png" width="150"></label>
+            <label><input type="radio" name="q4" value="flagge guyana.png"> <img src="flagge guyana.png" width="150"></label>
+            <label><input type="radio" name="q4" value="flagge Guinea-Bissau.png"> <img src="flagge Guinea-Bissau.png" width="150"></label>
+            <label><input type="radio" name="q4" value="flagge-suriname..jpg"> <img src="flagge-suriname..jpg" width="150"></label>
+        </section>
+
+        <section>
+            <h3>5. Wie viele Kilometer beträgt der Erdumfang am Äquator?</h3>
+            <label><input type="radio" name="q5" value="35.000  "> 35.000</label>
+            <label><input type="radio" name="q5" value="67.000"> 67.000</label>
+            <label><input type="radio" name="q5" value="20.000"> 20.000</label>
+            <label><input type="radio" name="q5" value="40.000"> 40.000</label>
+        </section>
+
+        <button id="absendeBtn">Fragen absenden</button>
+    </main>
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
